@@ -1,0 +1,14 @@
+node {
+    stage('fetching the code') {
+        git branch: 'main', url: 'https://github.com/Priyankaukhalkar/maven_Projects.git'
+    }
+    stage('build') {
+        echo 'sample-job'
+    }
+    stage('test') {
+        echo 'this is testing phase'
+    }
+    stage('deply') {
+        echo 'this is deployment phase'
+    }
+}
